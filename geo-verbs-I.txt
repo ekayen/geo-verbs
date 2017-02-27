@@ -1,0 +1,58 @@
+!geo-verbs-I.txt
+
+Multichar_Symbols +Verb 1+ +Theme Fut+ +3sg +3pl +Past +Pl +Sg +Pres +Subj +Aor +PFSF @U.pers.1@ @U.pers.2@ @U.pers.3@ @N.pers.3@ @D.pers.3@ @U.prev.a@ @U.prev.ga@ 
+
+LEXICON Root
+ Verbs;
+
+LEXICON Verbs
+ Preverb;
+ PersPre;
+ Stem;
+
+LEXICON Preverb
+Fut+@U.prev.a@:a@U.prev.a@ PersPre;
+Fut+@U.prev.ga@:ga@U.prev.ga@ PersPre;
+
+LEXICON PersPre
+1+@U.pers.1@:v@U.pers.1@ Stem;
+ Stem;
+
+LEXICON Stem
+ashen+Verb@U.prev.a@:ashen@U.prev.a@ PFSF;
+ak'et+Verb@U.prev.ga@:ak'et@U.prev.ga@ PFSF;
+
+LEXICON PFSF
++PFSF:eb PresSer;
++PFSF:eb FutSer;
++PFSF:eb PastSer;
+ AorSer;
+
+LEXICON PresSer
+ Num;
+
+LEXICON FutSer
+ Num;
+
+LEXICON PastSer
++Past@N.pers.3@:di@N.pers.3@ Num;
++Past+3sg@U.pers.3@:da@U.pers.3@ #;
++Past+3pl@U.pers.3@:dnen@U.pers.3@ #;
++Past+Subj@N.pers.3@:de@N.pers.3@ Num;
++Past+Subj+3sg@U.pers.3@:des@U.pers.3@ #;
++Past+Subj+3pl@U.pers.3@:dnen@U.pers.3@ #;
+
+LEXICON AorSer
++Aor@N.pers.3@:e@N.pers.3@ Num;
++Aor+3sg@U.pers.3@:a@U.pers.3@ #;
++Aor+3pl@U.pers.3@:es@U.pers.3@ #;
++Opt@N.pers.3@:o@N.pers.3@ Num;
++Opt+3sg@U.pers.3@:os@U.pers.3@ #;
++Opt+3pl@U.pers.3@:on@U.pers.3@ #;
+
+
+LEXICON Num
+ #;
++3sg@U.pers.3@:s@U.pers.3@ #;
++3pl@U.pers.3@:en@U.pers.3@ #;
++Pl@D.pers.3@:t@D.pers.3@ #;
