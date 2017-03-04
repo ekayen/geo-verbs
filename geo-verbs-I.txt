@@ -3,7 +3,7 @@
 Multichar_Symbols +Verb 1Subj+ 1SgObj+ 2Obj+ 1PlObj+ +Theme Prev+ +3sg +3pl +Past +Pl +Sg +Pres +Subj +Aor +PFSF SubjVers+ LocVers+ ObjVers+ 
 @U.subj.1@ @U.subj.2@ @U.subj.3@ @N.subj.3@ @D.subj.3@ 
 @U.obj.1sg@ @U.obj.2@ @U.obj.1pl@ 
-@U.prev.a@ @U.prev.ga@ @R.prev@ @R.prev.a@ @R.prev.ga@
+@U.prev.a@ @U.prev.ga@ @U.prev.da@ @R.prev@ @R.prev.a@ @R.prev.ga@ @R.prev.da@
 @U.vers.a@ @U.vers.e@ @U.vers.i@ @U.vers.u@ @D.vers@ @R.vers.i@ @R.vers@
 @U.versex.y@ @U.versex.n@
 @U.conj.I@ @U.conj.II@ @U.conj.III@
@@ -18,6 +18,7 @@ LEXICON Verbs
 LEXICON Preverb
 Prev+@U.prev.a@@U.prevex.y@:a@U.prev.a@@U.prevex.y@ PersPre;
 Prev+@U.prev.ga@@U.prevex.y@:ga@U.prev.ga@@U.prevex.y@ PersPre;
+Prev+@U.prev.da@@U.prevex.y@:da@U.prev.da@@U.prevex.y@ PersPre;
  PersPre;
 
 LEXICON PersPre
@@ -49,7 +50,7 @@ shen+Verb@U.prev.a@@U.conj.I@:shen0@U.prev.a@@U.conj.I@ EBI;
 k'et+Verb@U.prev.ga@@U.conj.I@:k'et0@U.prev.ga@@U.conj.I@ EBI;
 
 LEXICON ConjII
-NONE #;
+bad+Verb@U.prev.da@@U.conj.II@:bad0@U.prev.da@@U.conj.II@ EBII;
 
 LEXICON ConjIII
 tamash+Verb@U.conj.III@@U.prevex.n@:tamash0@U.conj.III@@U.prevex.n@ OBIII;
@@ -76,16 +77,32 @@ LEXICON OBI
 +PFSF@R.vers@:ob@R.vers@ NAorSerIandIII;
  @R.prevex.y@@R.vers@:@R.prevex.y@@R.vers@ AorSerI;
  
+LEXICON EBII
+!For now, just req'ing a version vowel for all non-aorist I verbs. Make loophole for perfect later.
++PFSF@R.vers@:eb@R.vers@ NAorSerII;
+@R.prevex.y@@R.vers@:@R.prevex.y@@R.vers@ AorSerI;
+
+
+ 
 LEXICON NAorSerIandIII
  PresFutSerIandIII;
  PastSerIandIII;
  PerfSerIandIII;
  
+LEXICON NAorSerII
+ PresFutSerII;
+ PastSerII;
+ PerfSerII;
+
 LEXICON PresFutSerIandIII
  Num;
  +3sg@U.subj.3@:s@U.subj.3@ #;
  +3pl@U.subj.3@:en@U.subj.3@ #;
-
+ 
+LEXICON PresFutSerII
+ i:i Num;
+ +3sg@U.subj.3@:a@U.subj.3@ #;
+ +3pl@U.subj.3@:ian@U.subj.3@ #;
 
 LEXICON PastSerIandIII
 +Past:di Num;
@@ -94,6 +111,14 @@ LEXICON PastSerIandIII
 +Past+Subj:de Num;
 +Past+Subj+3sg@U.subj.3@:des00@U.subj.3@ #;
 +Past+Subj+3pl@U.subj.3@:dnen00@U.subj.3@ #;
+
+LEXICON PastSerII
++Past:odi Num;
++Past+3sg@U.subj.3@:oda0@U.subj.3@ #;
++Past+3pl@U.subj.3@:odnen@U.subj.3@ #;
++Past+Subj:ode Num;
++Past+Subj+3sg@U.subj.3@:odes00@U.subj.3@ #;
++Past+Subj+3pl@U.subj.3@:odnen00@U.subj.3@ #;
 
 LEXICON AorSerI
 +Aor:e Num;
@@ -116,6 +141,14 @@ NONE #;
 !present perfect only takes i versioner
 !pluperfect and perfect subjunctive only take e versioner.
 
+LEXICON PerfSerII
+NONE #;
+
 LEXICON Num
  #;
 +Pl:t #;
+
+
+!Post-rules to add:
+!bad+dnen => badnen
+!i+en => ian
