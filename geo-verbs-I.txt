@@ -6,7 +6,7 @@ Multichar_Symbols +Verb 1Subj+ 1SgObj+ 2Obj+ 1PlObj+ +Theme Prev+ +3sg +3pl +Pas
 @U.prev.a@ @U.prev.ga@ @R.prev@ @R.prev.a@ @R.prev.ga@
 @U.vers.a@ @U.vers.e@ @U.vers.i@ @U.vers.u@ 
 @U.conj.I@ @U.conj.II@ @U.conj.III@
-@U.aor.y@ @R.aor.y@
+@U.prevex.y@ @R.prevex.y@ @U.prevex.n@
 
 LEXICON Root
  Verbs;
@@ -15,8 +15,8 @@ LEXICON Verbs
  Preverb;
  
 LEXICON Preverb
-Prev+@U.prev.a@@U.aor.y@:a@U.prev.a@@U.aor.y@ PersPre;
-Prev+@U.prev.ga@@U.aor.y@:ga@U.prev.ga@@U.aor.y@ PersPre;
+Prev+@U.prev.a@@U.prevex.y@:a@U.prev.a@@U.prevex.y@ PersPre;
+Prev+@U.prev.ga@@U.prevex.y@:ga@U.prev.ga@@U.prevex.y@ PersPre;
  PersPre;
 
 LEXICON PersPre
@@ -32,6 +32,7 @@ LEXICON Version
 LocVers+:a Stem;
 SubjVers+:i Stem;
 ObjVers+:u Stem;
+!add flags along the lines of @U.perf.n@
 
 !===================================================================================!
 !                                        STEMS                                      !
@@ -51,7 +52,7 @@ LEXICON ConjII
 NONE EB;
 
 LEXICON ConjIII
-tamash+Verb@U.conj.III@:tamash0@U.conj.III@ EB;
+tamash+Verb@U.conj.III@@U.prevex.n@:tamash0@U.conj.III@@U.prevex.n@ EB;
 
 LEXICON ConjIV
 NONE EB;
@@ -59,20 +60,19 @@ NONE EB;
 !===================================================================================!
 
 LEXICON EB
-+PFSF:eb PresSer;
-+PFSF:eb FutSer;
-+PFSF:eb PastSer;
++PFSF:eb NAorSeries;
  AorSer;
 
-LEXICON PresSer
+LEXICON NAorSeries
+ PresFutSer;
+ PastSer;
+ PerfSer;
+ 
+LEXICON PresFutSer
  Num;
  +3sg@U.subj.3@:s@U.subj.3@ #;
  +3pl@U.subj.3@:en@U.subj.3@ #;
 
-LEXICON FutSer
- Num;
- +3sg@U.subj.3@:s@U.subj.3@ #;
- +3pl@U.subj.3@:en@U.subj.3@ #;
 
 LEXICON PastSer
 +Past:di Num;
@@ -83,12 +83,17 @@ LEXICON PastSer
 +Past+Subj+3pl@U.subj.3@:dnen00@U.subj.3@ #;
 
 LEXICON AorSer
-+Aor@R.aor.y@:e@R.aor.y@ Num;
-+Aor+3sg@U.subj.3@@R.aor.y@:a0@U.subj.3@@R.aor.y@ #;
-+Aor+3pl@U.subj.3@@R.aor.y@:es0@U.subj.3@@R.aor.y@ #;
-+Opt@R.aor.y@:o@R.aor.y@ Num;
-+Opt+3sg@U.subj.3@@R.aor.y@:os0@U.subj.3@@R.aor.y@ #;
-+Opt+3pl@U.subj.3@@R.aor.y@:on0@U.subj.3@@R.aor.y@ #;
++Aor@R.prevex.y@:e@R.prevex.y@ Num;
++Aor+3sg@U.subj.3@@R.prevex.y@:a0@U.subj.3@@R.prevex.y@ #;
++Aor+3pl@U.subj.3@@R.prevex.y@:es0@U.subj.3@@R.prevex.y@ #;
++Opt@R.prevex.y@:o@R.prevex.y@ Num;
++Opt+3sg@U.subj.3@@R.prevex.y@:os0@U.subj.3@@R.prevex.y@ #;
++Opt+3pl@U.subj.3@@R.prevex.y@:on0@U.subj.3@@R.prevex.y@ #;
+
+LEXICON PerfSer
+NONE #;
+!present perfect only takes i versioner
+!pluperfect and perfect subjunctive only take e versioner.
 
 LEXICON Num
  #;
