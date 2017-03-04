@@ -4,7 +4,7 @@ Multichar_Symbols +Verb 1Subj+ 1SgObj+ 2Obj+ 1PlObj+ +Theme Prev+ +3sg +3pl +Pas
 @U.subj.1@ @U.subj.2@ @U.subj.3@ @N.subj.3@ @D.subj.3@ 
 @U.obj.1sg@ @U.obj.2@ @U.obj.1pl@ 
 @U.prev.a@ @U.prev.ga@ @R.prev@ @R.prev.a@ @R.prev.ga@
-@U.vers.a@ @U.vers.e@ @U.vers.i@ @U.vers.u@ @D.vers@ @R.vers.i@
+@U.vers.a@ @U.vers.e@ @U.vers.i@ @U.vers.u@ @D.vers@ @R.vers.i@ @R.vers@
 @U.versex.y@ @U.versex.n@
 @U.conj.I@ @U.conj.II@ @U.conj.III@
 @U.prevex.y@ @R.prevex.y@ @U.prevex.n@
@@ -45,45 +45,49 @@ LEXICON Stem
  ConjIV;
  
 LEXICON ConjI
-shen+Verb@U.prev.a@@U.conj.I@:shen0@U.prev.a@@U.conj.I@ EB;
-k'et+Verb@U.prev.ga@@U.conj.I@:k'et0@U.prev.ga@@U.conj.I@ EB;
+shen+Verb@U.prev.a@@U.conj.I@:shen0@U.prev.a@@U.conj.I@ EBI;
+k'et+Verb@U.prev.ga@@U.conj.I@:k'et0@U.prev.ga@@U.conj.I@ EBI;
 
 LEXICON ConjII
-NONE EB;
+NONE #;
 
 LEXICON ConjIII
-tamash+Verb@U.conj.III@@U.prevex.n@:tamash0@U.conj.III@@U.prevex.n@ IIIOB;
+tamash+Verb@U.conj.III@@U.prevex.n@:tamash0@U.conj.III@@U.prevex.n@ OBIII;
 
 LEXICON ConjIV
-NONE EB;
+NONE #;
 
 !===================================================================================!
 
-LEXICON IIIOB
- +PFSF@D.vers@:ob@D.vers@ NAorSer;
- +PFSF@R.vers.i@:eb@R.vers.i@ NAorSer;
+LEXICON OBIII
+ +PFSF@D.vers@:ob@D.vers@ NAorSerIandIII;
+ +PFSF@R.vers.i@:eb@R.vers.i@ NAorSerIandIII;
  @R.vers.i@:@R.vers.i@ AorSerIII;
+ !Double check that this version vowel has to be /i/ for aorist series.
 
-LEXICON EB
-+PFSF:eb NAorSer;
- AorSer;
+LEXICON EBI
+!For now, just req'ing a version vowel for all non-aorist I verbs. Make loophole for perfect later.
++PFSF@R.vers@:eb@R.vers@ NAorSerIandIII;
+!Type I aorist verbs require a preverb and a version vowel
+ @R.prevex.y@@R.vers@:@R.prevex.y@@R.vers@ AorSerI;
  
-LEXICON OB
-+PFSF:ob NAorSer;
- AorSer;
+LEXICON OBI
+!For now, just req'ing a version vowel for all non-aorist I verbs. Make loophole for perfect later.
++PFSF@R.vers@:ob@R.vers@ NAorSerIandIII;
+ @R.prevex.y@@R.vers@:@R.prevex.y@@R.vers@ AorSerI;
  
-LEXICON NAorSer
- PresFutSer;
- PastSer;
- PerfSer;
+LEXICON NAorSerIandIII
+ PresFutSerIandIII;
+ PastSerIandIII;
+ PerfSerIandIII;
  
-LEXICON PresFutSer
+LEXICON PresFutSerIandIII
  Num;
  +3sg@U.subj.3@:s@U.subj.3@ #;
  +3pl@U.subj.3@:en@U.subj.3@ #;
 
 
-LEXICON PastSer
+LEXICON PastSerIandIII
 +Past:di Num;
 +Past+3sg@U.subj.3@:da0@U.subj.3@ #;
 +Past+3pl@U.subj.3@:dnen@U.subj.3@ #;
@@ -91,13 +95,13 @@ LEXICON PastSer
 +Past+Subj+3sg@U.subj.3@:des00@U.subj.3@ #;
 +Past+Subj+3pl@U.subj.3@:dnen00@U.subj.3@ #;
 
-LEXICON AorSer
-+Aor@R.prevex.y@:e@R.prevex.y@ Num;
-+Aor+3sg@U.subj.3@@R.prevex.y@:a0@U.subj.3@@R.prevex.y@ #;
-+Aor+3pl@U.subj.3@@R.prevex.y@:es0@U.subj.3@@R.prevex.y@ #;
-+Opt@R.prevex.y@:o@R.prevex.y@ Num;
-+Opt+3sg@U.subj.3@@R.prevex.y@:os0@U.subj.3@@R.prevex.y@ #;
-+Opt+3pl@U.subj.3@@R.prevex.y@:on0@U.subj.3@@R.prevex.y@ #;
+LEXICON AorSerI
++Aor:e Num;
++Aor+3sg@U.subj.3@:a0@U.subj.3@ #;
++Aor+3pl@U.subj.3@:es0@U.subj.3@ #;
++Opt:o Num;
++Opt+3sg@U.subj.3@:os0@U.subj.3@ #;
++Opt+3pl@U.subj.3@:on0@U.subj.3@ #;
 
 LEXICON AorSerIII
 +Aor:e Num;
@@ -107,7 +111,7 @@ LEXICON AorSerIII
 +Opt+3sg@U.subj.3@:os0@U.subj.3@ #;
 +Opt+3pl@U.subj.3@:on0@U.subj.3@ #;
 
-LEXICON PerfSer
+LEXICON PerfSerIandIII
 NONE #;
 !present perfect only takes i versioner
 !pluperfect and perfect subjunctive only take e versioner.
