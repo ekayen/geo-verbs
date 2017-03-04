@@ -1,0 +1,70 @@
+!=======================!
+!        Present        !
+!=======================!
+vasheneb
+asheneb
+ashenebs
+vashenebt
+ashenebt
+asheneben
+
+
+!=======================!
+!        Future         !
+!=======================!
+avasheneb
+aasheneb
+aashenebs
+avashenebt
+aasheneb
+aasheneben
+
+!=======================!
+!       Imperfect       !
+!=======================!
+vashenebdi
+ashenebdi
+ashenebda
+vashenebdit
+ashenebdit
+ashenebdnen
+
+!=======================!
+!      Conditional      !
+!=======================!
+avashenebdi
+aashenebdi
+aashenebda
+avasehenbdit
+aashenebdit
+aashenebdnen
+
+!=======================!
+!  Present Subjunctive  !
+!=======================!
+vashenebde
+ashenebde
+ashenebdes
+vashenebdet
+ashenebdet
+ashenebdnen
+
+!=======================!
+!  Future Subjunctive   !
+!=======================!
+avashenebde
+aashenebde
+aashenebdes
+avashenebdet
+aashenebdet
+aashenebdnen
+
+!=======================!
+!         Aorist        !
+!=======================!
+avashene
+aashene
+aashena
+avashenet
+aashenet
+aashenes
