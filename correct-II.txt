@@ -1,0 +1,112 @@
+!=======================!
+!        Present        !
+!=======================!
+vibadebi
+ibadebi
+ibadeba
+vibadebit
+ibadebit
+ibadebian
+
+!=======================!
+!        Future         !
+!=======================!
+davibadebi
+daibadebi
+daibadeba
+davibadebit
+davibadebit
+daibadebit
+daibadebian
+
+!=======================!
+!       Imperfect       !
+!=======================!
+vibadebodi
+ibadebodi
+ibadeboda
+vibadebodit
+ibadebodit
+ibadebodnen
+
+!=======================!
+!      Conditional      !
+!=======================!
+davibadebodi
+daibadebodi
+daibadeboda
+davibadebodit
+daibadebodit
+daibadebodnen
+
+!=======================!
+!  Present Subjunctive  !
+!=======================!
+vibadebode
+ibadebode
+ibadebodes
+vibadebodet
+ibadebodet
+ibadebodnen
+
+!=======================!
+!  Future Subjunctive   !
+!=======================!
+davibadebode
+daibadebode
+daibadebodes
+davibadebodet
+daibadebodet
+daibadebodnen
+
+!=======================!
+!         Aorist        !
+!=======================!
+davibade
+daibade
+daibada
+davibadet
+daibadet
+daibadet
+daibadnen
+
+!=======================!
+!        Optative       !
+!=======================!
+davibado
+daibado
+daibados
+davibadot
+daibadot
+daibadot
+daibadon
+
+!=======================!
+!        Perfect        !
+!=======================!
+davbadebulvar
+dabadebulxar
+dabadebula
+davbadebulvart
+dabadebulxart
+dabadebulan
+
+!=======================!
+!      Pluperfect       !
+!=======================!
+davbadebuliqavi
+dabadebuliqavi
+dabadebuliqo
+davbadebuliqavit
+dabadebuliqavit
+dabadebuliqvnen
+
+!=======================!
+!  Perfect Subjunctive  !
+!=======================!
+davbadebuliqo
+dabadebuliqo
+dabadebuliqos
+davbadebuliqot
+dabadebuliqot
+dabadebuliqon

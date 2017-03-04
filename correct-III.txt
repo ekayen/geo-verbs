@@ -1,0 +1,109 @@
+!=======================!
+!        Present        !
+!=======================!
+vtamashob
+tamashob
+tamashobs
+vtamashobt
+tamashobt
+tamashoben
+
+!=======================!
+!       Imperfect       !
+!=======================!
+vtamashobdi
+tamashobdi
+tamashobda
+vtamashobdit
+tamashobdit
+tamashobdnen
+
+!=======================!
+!  Present Subjunctive  !
+!=======================!
+vtamashobde
+tamashobde
+tamashobdes
+vtamashobdet
+tamashobdet
+tamashobdnen
+
+!=======================!
+!        Future         !
+!=======================!
+vitamasheb
+itamasheb
+itamashebs
+vitamashebt
+itamashebt
+itamasheben
+
+!=======================!
+!      Conditional      !
+!=======================!
+vitamashebdi
+itamashebdi
+itamashebda
+vitamashebdit
+itamashebdit
+itamashebdnen
+
+!=======================!
+!  Future Subjunctive   !
+!=======================!
+vitamashebde
+itamashebde
+itamashebdes
+vitamashebdet
+itamashebdet
+itamashebdnen
+
+!=======================!
+!         Aorist        !
+!=======================!
+vitamashe
+itamashe
+itamasha
+vitamashet
+itamashet
+itamashes
+
+!=======================!
+!        Optative       !
+!=======================!
+vitamasho
+itamasho
+itamashos
+vitamashot
+itamashot
+itamashon
+
+!=======================!
+!        Perfect        !
+!=======================!
+mitamashia
+gitamashia
+utamashia
+gvitamashia
+gitamashiat
+utamashiat
+
+!=======================!
+!      Pluperfect       !
+!=======================!
+metamasha
+getamasha
+etamasha
+gvetamasha
+getamashat
+etamashat
+
+!=======================!
+!  Perfect Subjunctive  !
+!=======================!
+davbadebuliqo
+dabadebuliqo
+dabadebuliqos
+davbadebuliqot
+dabadebuliqot
+dabadebuliqon
