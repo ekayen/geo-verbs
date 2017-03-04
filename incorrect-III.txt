@@ -1,0 +1,61 @@
+!Do preverbs accidentally get attached?
+avtamashob
+atamashob
+atamashobs
+avtamashobt
+atamashobt
+atamashoben
+
+!Does ob appear with the version vowel?
+vitamashob
+itamashob
+itamashobs
+vitamashobt
+itamashobt
+itamashoben
+
+
+!Does eb appear without the version vowel?
+vtamasheb
+tamasheb
+tamashebs
+vtamashebt
+tamashebt
+tamasheben
+
+vtamashebdi
+tamashebdi
+tamashebda
+vtamashebdit
+tamashebdit
+tamashebdnen
+
+vtamashebde
+tamashebde
+tamashebdes
+vtamashebdet
+tamashebdet
+tamashebdnen
+
+!Does eb appear with the wrong version vowel?
+vatamasheb
+atamasheb
+atamashebs
+vatamashebt
+atamashebt
+atamasheben
+
+!Alter these to test version vowel cooccurence with aorist.
+vitamashe
+itamashe
+itamasha
+vitamashet
+itamashet
+itamashes
+
+vitamasho
+itamasho
+itamashos
+vitamashot
+itamashot
+itamashon
