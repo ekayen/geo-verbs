@@ -160,3 +160,18 @@ ashenos
 vashenot
 ashenot
 ashenon
+
+!can be missing version vowel?
+vsheneb
+sheneb
+shenebs
+vshenebt
+shenebt
+sheneben
+
+vshenebdi
+shenebdi
+shenebda
+vshenebdit
+shenebdit
+shenebdnen
