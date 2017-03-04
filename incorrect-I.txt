@@ -1,4 +1,4 @@
-
+!Can number/person prefixes/suffixes combine incorrectly?
 avashenebda
 avashenebdat
 avashenebdas
@@ -36,6 +36,7 @@ vasheneben
 vashenebent
 vashenebens
 
+!Can number/person suffixes combine incorrectly?
 aashenebdis
 aashenebdien
 aashenebendi
@@ -45,6 +46,7 @@ aashenebdist
 aashenebdient
 aashenebendit
 
+!Can number/person suffixes combine incorrectly?
 ashenebdis
 ashenebdien
 ashenebendi
@@ -54,7 +56,7 @@ ashenebdist
 ashenebdient
 ashenebendit
 
-
+!Can number/person suffixes combine incorrectly?
 avshenebda
 avshenebdat
 avshenebdas
@@ -62,11 +64,14 @@ avshenebdadnen
 avshenebdadi
 avshenebdida
 
+!Can number/person suffixes combine incorrectly?
 ashenebdat
 ashenebdas
 ashenebdadnen
 ashenebdadi
 ashenebdida
+
+!Can number/person suffixes combine incorrectly?
 
 shenebdat
 shenebdas
@@ -74,6 +79,7 @@ shenebdadnen
 shenebdadi
 shenebdida
 
+!1st person and 3rd person combine?
 avshenebs
 avsheneben
 avshenebdis
@@ -85,6 +91,7 @@ avshenebdist
 avshenebdient
 avshenebendit
 
+!missing preverb? missing version vowel? 1st person and 3rd person combine?
 vshenebs
 vshenebst
 vshenebts
@@ -92,6 +99,7 @@ vsheneben
 vshenebent
 vshenebens
 
+!Can number/person suffixes combine incorrectly?
 ashenebdis
 ashenebdien
 ashenebendi
@@ -100,6 +108,7 @@ ashenebent
 ashenebdist
 ashenebdient
 
+!missing version vowel?
 shenebdis
 shenebdien
 shenebendi
@@ -133,6 +142,7 @@ shenebdnen
 avshenebde
 avshenebdet
 
+!wrong preverb?
 gavasheneb
 gaasheneb
 gaashenebs
@@ -140,6 +150,7 @@ gavashenebt
 gaasheneb
 gaasheneben
 
+!Wrong (?) version vowel?
 avisheneb
 aisheneb
 aishenebs
@@ -147,6 +158,7 @@ avishenebt
 aisheneb
 aisheneben
 
+!can aorist be missing preverb?
 vashene
 ashene
 ashena 
@@ -161,7 +173,7 @@ vashenot
 ashenot
 ashenon
 
-!can be missing version vowel?
+!can present and future series be missing version vowel?
 vsheneb
 sheneb
 shenebs
