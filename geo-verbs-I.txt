@@ -4,7 +4,8 @@ Multichar_Symbols +Verb 1Subj+ 1SgObj+ 2Obj+ 1PlObj+ +Theme Prev+ +3sg +3pl +Pas
 @U.subj.1@ @U.subj.2@ @U.subj.3@ @N.subj.3@ @D.subj.3@ 
 @U.obj.1sg@ @U.obj.2@ @U.obj.1pl@ 
 @U.prev.a@ @U.prev.ga@ @R.prev@ @R.prev.a@ @R.prev.ga@
-@U.vers.a@ @U.vers.e@ @U.vers.i@ @U.vers.u@ 
+@U.vers.a@ @U.vers.e@ @U.vers.i@ @U.vers.u@ @D.vers@ @R.vers.i@
+@U.versex.y@ @U.versex.n@
 @U.conj.I@ @U.conj.II@ @U.conj.III@
 @U.prevex.y@ @R.prevex.y@ @U.prevex.n@
 
@@ -20,8 +21,6 @@ Prev+@U.prev.ga@@U.prevex.y@:ga@U.prev.ga@@U.prevex.y@ PersPre;
  PersPre;
 
 LEXICON PersPre
-!< "1Subj+":v "@U.subj.1@" > Version;
-!1Subj+:v Version;
 1Subj+@U.subj.1@:v@U.subj.1@ Version;
 1SgObj+:m Version;
 2Obj+:m Version;
@@ -29,9 +28,10 @@ LEXICON PersPre
  Version;
  
 LEXICON Version
-LocVers+:a Stem;
-SubjVers+:i Stem;
-ObjVers+:u Stem;
+LocVers+@U.vers.a@:a@U.vers.a@ Stem;
+SubjVers+@U.vers.i@:i@U.vers.i@ Stem;
+ObjVers+@U.vers.u@:u@U.vers.u@ Stem;
+  Stem;
 !add flags along the lines of @U.perf.n@
 
 !===================================================================================!
@@ -52,18 +52,27 @@ LEXICON ConjII
 NONE EB;
 
 LEXICON ConjIII
-tamash+Verb@U.conj.III@@U.prevex.n@:tamash0@U.conj.III@@U.prevex.n@ EB;
+tamash+Verb@U.conj.III@@U.prevex.n@:tamash0@U.conj.III@@U.prevex.n@ IIIOB;
 
 LEXICON ConjIV
 NONE EB;
 
 !===================================================================================!
 
-LEXICON EB
-+PFSF:eb NAorSeries;
- AorSer;
+LEXICON IIIOB
+ +PFSF@D.vers@:ob@D.vers@ NAorSer;
+ +PFSF@R.vers.i@:eb@R.vers.i@ NAorSer;
+ @R.vers.i@:@R.vers.i@ AorSerIII;
 
-LEXICON NAorSeries
+LEXICON EB
++PFSF:eb NAorSer;
+ AorSer;
+ 
+LEXICON OB
++PFSF:ob NAorSer;
+ AorSer;
+ 
+LEXICON NAorSer
  PresFutSer;
  PastSer;
  PerfSer;
@@ -89,6 +98,14 @@ LEXICON AorSer
 +Opt@R.prevex.y@:o@R.prevex.y@ Num;
 +Opt+3sg@U.subj.3@@R.prevex.y@:os0@U.subj.3@@R.prevex.y@ #;
 +Opt+3pl@U.subj.3@@R.prevex.y@:on0@U.subj.3@@R.prevex.y@ #;
+
+LEXICON AorSerIII
++Aor:e Num;
++Aor+3sg@U.subj.3@:a0@U.subj.3@ #;
++Aor+3pl@U.subj.3@:es0@U.subj.3@ #;
++Opt:o Num;
++Opt+3sg@U.subj.3@:os0@U.subj.3@ #;
++Opt+3pl@U.subj.3@:on0@U.subj.3@ #;
 
 LEXICON PerfSer
 NONE #;
