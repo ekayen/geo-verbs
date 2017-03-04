@@ -68,3 +68,43 @@ aashena
 avashenet
 aashenet
 aashenes
+
+!=======================!
+!        Optative       !
+!=======================!
+avasheno
+aasheno
+aashenos
+avashenot
+aashenot
+aashenon
+
+!=======================!
+!        Perfect        !
+!=======================!
+amishenebia
+agishenebia
+aushenebia
+agvishenebia
+agishenebiat
+aushenebiat
+
+!=======================!
+!      Pluperfect       !
+!=======================!
+ameshenebina
+ageshenebina
+aeshenebina
+agveshenebina
+ageshenebinat
+aeshenebinat
+
+!=======================!
+!  Perfect Subjunctive  !
+!=======================!
+ameshenebinos
+ageshenebinos
+aeshenebinos
+agveshenebinos
+ageshenebinot
+aeshenebinot
