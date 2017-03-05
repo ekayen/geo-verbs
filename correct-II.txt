@@ -1,112 +1,110 @@
 !=======================!
 !        Present        !
 !=======================!
-vibadebi
-ibadebi
-ibadeba
-vibadebit
-ibadebit
-ibadebian
+vuaxlovdebi
+uaxlovdebi
+uaxlovdeba
+vuaxlovdebit
+uaxlovdebit
+uaxlovdebian
 
 !=======================!
 !        Future         !
 !=======================!
-davibadebi
-daibadebi
-daibadeba
-davibadebit
-davibadebit
-daibadebit
-daibadebian
+mivuaxlovdebi
+miuaxlovdebi
+miuaxlovdeba
+mivuaxlovdebit
+mivuaxlovdebit
+miuaxlovdebit
+miuaxlovdebian
 
 !=======================!
 !       Imperfect       !
 !=======================!
-vibadebodi
-ibadebodi
-ibadeboda
-vibadebodit
-ibadebodit
-ibadebodnen
+vuaxlovdebodi
+uaxlovdebodi
+uaxlovdeboda
+vuaxlovdebodit
+uaxlovdebodit
+uaxlovdebodnen
 
 !=======================!
 !      Conditional      !
 !=======================!
-davibadebodi
-daibadebodi
-daibadeboda
-davibadebodit
-daibadebodit
-daibadebodnen
+mivuaxlovdebodi
+miuaxlovdebodi
+miuaxlovdebomi
+mivuaxlovdebodit
+miuaxlovdebodit
+miuaxlovdebodnen
 
 !=======================!
 !  Present Subjunctive  !
 !=======================!
-vibadebode
-ibadebode
-ibadebodes
-vibadebodet
-ibadebodet
-ibadebodnen
+vuaxlovdebode
+uaxlovdebode
+uaxlovdebodes
+vuaxlovdebodet
+uaxlovdebodet
+uaxlovdebodnen
 
 !=======================!
 !  Future Subjunctive   !
 !=======================!
-davibadebode
-daibadebode
-daibadebodes
-davibadebodet
-daibadebodet
-daibadebodnen
+mivuaxlovdebode
+miuaxlovdebode
+miuaxlovdebodes
+mivuaxlovdebodet
+miuaxlovdebodet
+miuaxlovdebodnen
 
 !=======================!
-!         Aorist        !
+!    Aorist Option 2    !
 !=======================!
-davibade
-daibade
-daibada
-davibadet
-daibadet
-daibadet
-daibadnen
+mivuaxlovdi
+miuaxlovdi
+miuaxlovda
+mivuaxlovdit
+miiuaxlovdit
+miuaxlovdnen
 
 !=======================!
-!        Optative       !
+!   Optative Option 2   !
 !=======================!
-davibado
-daibado
-daibados
-davibadot
-daibadot
-daibadot
-daibadon
+mivuaxlovde
+miuaxlovde
+miuaxlovdes
+mivuaxlovdet
+miuaxlovdet
+miuaxlovden
 
 !=======================!
-!        Perfect        !
+!        Perfect?       !
 !=======================!
-davbadebulvar
-dabadebulxar
-dabadebula
-davbadebulvart
-dabadebulxart
-dabadebulan
+mivaxlovdebulvar
+miaxlovdebulxar
+miaxlovdebula
+mivaxlovdebulvart
+miaxlovdebulxart
+miaxlovdebulan
 
 !=======================!
-!      Pluperfect       !
+!      Pluperfect?      !
 !=======================!
-davbadebuliqavi
-dabadebuliqavi
-dabadebuliqo
-davbadebuliqavit
-dabadebuliqavit
-dabadebuliqvnen
+mivaxlovdebuliqavi
+miaxlovdebuliqavi
+miaxlovdebuliqo
+mivaxlovdebuliqavit
+miaxlovdebuliqavit
+miaxlovdebuliqvnen
 
 !=======================!
-!  Perfect Subjunctive  !
+!  Perfect Subjunctive? !
 !=======================!
-davbadebuliqo
-dabadebuliqo
-dabadebuliqos
-davbadebuliqot
-dabadebuliqot
-dabadebuliqon
+mivaxlovdebuliqo
+miaxlovdebuliqo
+miaxlovdebuliqos
+mivaxlovdebuliqot
+miaxlovdebuliqot
+miaxlovdebuliqon
