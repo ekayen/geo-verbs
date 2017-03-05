@@ -1,6 +1,6 @@
 !geo-verbs-I.txt
 
-Multichar_Symbols +Verb 1Subj+ 1SgObj+ 2Obj+ 1PlObj+ +Theme Prev+ +3sg +3pl +Past +Pl +Sg +Pres +Subj +Aor +PFSF SubjVers+ LocVers+ ObjVers+ 
+Multichar_Symbols +Verb 1Subj+ 1SgObj+ 2Obj+ 1PlObj+ +Theme Prev+ +3sg +3pl +Past +Pl +Sg +Pres +Subj +Aor +PFSF +PFSFFut SubjVers+ LocVers+ ObjVers+ 
 @U.subj.1@ @U.subj.2@ @U.subj.3@ @N.subj.3@ @D.subj.3@ 
 @U.obj.1sg@ @U.obj.2@ @U.obj.1pl@ 
 @U.prev.a@ @U.prev.ga@ @U.prev.mi@ @R.prev@ @R.prev.a@ @R.prev.ga@ @R.prev.mi@
@@ -24,7 +24,7 @@ Prev+@U.prev.mi@@U.prevex.y@:mi@U.prev.mi@@U.prevex.y@ PersPre;
 LEXICON PersPre
 1Subj+@U.subj.1@:v@U.subj.1@ Version;
 1SgObj+@N.conj.II@:m@N.conj.II@ Version;
-2Obj@N.conj.II@+:g@N.conj.II@ Version;
+2Obj+@N.conj.II@:g@N.conj.II@ Version;
 1PlObj+@N.conj.II@:gv@N.conj.II@ Version;
 !Intransitive verbs disallowed from taking object agreement (@N.conj.II@)
  Version;
@@ -64,7 +64,7 @@ NONE #;
 
 LEXICON OBIII
  +PFSF@D.vers@:ob@D.vers@ NAorSerIandIII;
- +PFSF@R.vers.i@:eb@R.vers.i@ NAorSerIandIII;
+ +PFSFFut@R.vers.i@:eb@R.vers.i@ NAorSerIandIII;
  @R.vers.i@:@R.vers.i@ AorSerIII;
  !Double check that this version vowel has to be /i/ for aorist series.
 
