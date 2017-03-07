@@ -1,6 +1,6 @@
 !geo-verbs-I.txt
 
-Multichar_Symbols +Verb 1Subj+ 1SgObj+ 2Obj+ 1PlObj+ +Theme Prev+ +3sg +3pl +Past +Pl +Sg +Pres +Subj +Aor +PFSF +PFSFFut SubjVers+ LocVers+ ObjVers+ 
+Multichar_Symbols +Verb 1Subj+ 1SgObj+ 2Obj+ 1PlObj+ +Theme Prev+ +3Sg +3Pl +N3 +Past +Pl +Sg +Pres +Subj +Aor +PFSF +PFSFFut SubjVers+ LocVers+ ObjVers+ 
 @U.subj.1@ @U.subj.2@ @U.subj.3@ @N.subj.3@ @D.subj.3@ 
 @U.obj.1sg@ @U.obj.2@ @U.obj.1pl@ 
 @U.prev.a@ @U.prev.ga@ @U.prev.mi@ @R.prev@ @R.prev.a@ @R.prev.ga@ @R.prev.mi@
@@ -19,6 +19,7 @@ LEXICON Preverb
 Prev+@U.prev.a@@U.prevex.y@:a@U.prev.a@@U.prevex.y@ PersPre;
 Prev+@U.prev.ga@@U.prevex.y@:ga@U.prev.ga@@U.prevex.y@ PersPre;
 Prev+@U.prev.mi@@U.prevex.y@:mi@U.prev.mi@@U.prevex.y@ PersPre;
+Prev+@U.prev.da@@U.prevex.y@:da@U.prev.da@@U.prevex.y@ PersPre;
  PersPre;
 
 LEXICON PersPre
@@ -31,10 +32,10 @@ LEXICON PersPre
  
 LEXICON Version
 !currently assuming all version vowels can combine with all verbs
-!not sure about e version vowel
-LocVers+@U.vers.a@:a@U.vers.a@ Stem;
-SubjVers+@U.vers.i@:i@U.vers.i@ Stem;
-ObjVers+@U.vers.u@:u@U.vers.u@ Stem;
+Vers+@U.vers.a@:a@U.vers.a@ Stem;
+Vers+@U.vers.e@:e@U.vers.e@ Stem;
+Vers+@U.vers.i@:i@U.vers.i@ Stem;
+Vers+@U.vers.u@:u@U.vers.u@ Stem;
   Stem;
 
 !===================================================================================!
@@ -48,14 +49,15 @@ LEXICON Stem
  ConjIV;
  
 LEXICON ConjI
-shen+Verb@U.prev.a@@U.conj.I@:shen0@U.prev.a@@U.conj.I@ EBI;
-k'et+Verb@U.prev.ga@@U.conj.I@:k'et0@U.prev.ga@@U.conj.I@ EBI;
+shen+Verb@U.prev.a@@U.conj.I@@U.vers.a@:shen0@U.prev.a@@U.conj.I@@U.vers.a@ EBI;
+k'et+Verb@U.prev.ga@@U.conj.I@@U.vers.a@:k'et0@U.prev.ga@@U.conj.I@@U.vers.a@ EBI;
+tanxem+Verb@U.prev.da@@U.conj.I@@U.vers.e@:qop@U.prev.da@@U.conj.I@@U.vers.e@ EBI;
 
 LEXICON ConjII
-axlovd+Verb@U.prev.mi@@U.conj.II@:axlovd0@U.prev.mi@@U.conj.II@ EBII;
+axlovd+Verb@U.prev.mi@@U.conj.II@@U.vers.u@:axlovd0@U.prev.mi@@U.conj.II@@U.vers.u@ EBII;
 
 LEXICON ConjIII
-tamash+Verb@U.conj.III@@U.prevex.n@:tamash0@U.conj.III@@U.prevex.n@ OBIII;
+tamash+Verb@U.conj.III@:tamash0@U.conj.III@ OBIII;
 
 LEXICON ConjIV
 NONE #;
@@ -64,7 +66,8 @@ NONE #;
 
 LEXICON OBIII
  +PFSF@D.vers@:ob@D.vers@ NAorSerIandIII;
- +PFSFFut@R.vers.i@:eb@R.vers.i@ NAorSerIandIII;
+ +PFSF@R.vers.i@:eb@R.vers.i@ NAorSerIandIII;
+ !Why change this morpheme's name?
  @R.vers.i@:@R.vers.i@ AorSerIII;
  !Double check that this version vowel has to be /i/ for aorist series.
 
@@ -98,53 +101,53 @@ LEXICON NAorSerII
 
 LEXICON PresFutSerIandIII
  Num;
- +3sg@U.subj.3@:s@U.subj.3@ #;
- +3pl@U.subj.3@:en@U.subj.3@ #;
+ +3Sg@U.subj.3@:s@U.subj.3@ #;
+ +3Pl@U.subj.3@:en@U.subj.3@ #;
  
 LEXICON PresFutSerII
- i:i Num;
- +3sg@U.subj.3@:a@U.subj.3@ #;
- +3pl@U.subj.3@:ian@U.subj.3@ #;
+ +N3:i Num;
+ +3Sg@U.subj.3@:a@U.subj.3@ #;
+ +3Pl@U.subj.3@:ian@U.subj.3@ #;
 
 LEXICON PastSerIandIII
 +Past:di Num;
-+Past+3sg@U.subj.3@:da0@U.subj.3@ #;
-+Past+3pl@U.subj.3@:dnen@U.subj.3@ #;
-+Past+Subj:de Num;
-+Past+Subj+3sg@U.subj.3@:des00@U.subj.3@ #;
-+Past+Subj+3pl@U.subj.3@:dnen00@U.subj.3@ #;
++Past+3Sg@U.subj.3@:da0@U.subj.3@ #;
++Past+3Pl@U.subj.3@:dnen@U.subj.3@ #;
++Subj:de Num;
++Subj+3Sg@U.subj.3@:des00@U.subj.3@ #;
++Subj+3Pl@U.subj.3@:dnen00@U.subj.3@ #;
 
 LEXICON PastSerII
 +Past:odi Num;
-+Past+3sg@U.subj.3@:oda0@U.subj.3@ #;
-+Past+3pl@U.subj.3@:odnen@U.subj.3@ #;
-+Past+Subj:ode Num;
-+Past+Subj+3sg@U.subj.3@:odes00@U.subj.3@ #;
-+Past+Subj+3pl@U.subj.3@:odnen00@U.subj.3@ #;
++Past+3Sg@U.subj.3@:oda0@U.subj.3@ #;
++Past+3Pl@U.subj.3@:odnen@U.subj.3@ #;
++Subj:ode Num;
++Subj+3Sg@U.subj.3@:odes00@U.subj.3@ #;
++Subj+3Pl@U.subj.3@:odnen00@U.subj.3@ #;
 
 LEXICON AorSerI
 +Aor:e Num;
-+Aor+3sg@U.subj.3@:a0@U.subj.3@ #;
-+Aor+3pl@U.subj.3@:es0@U.subj.3@ #;
++Aor+3Sg@U.subj.3@:a0@U.subj.3@ #;
++Aor+3Pl@U.subj.3@:es0@U.subj.3@ #;
 +Opt:o Num;
-+Opt+3sg@U.subj.3@:os0@U.subj.3@ #;
-+Opt+3pl@U.subj.3@:on0@U.subj.3@ #;
++Opt+3Sg@U.subj.3@:os0@U.subj.3@ #;
++Opt+3Pl@U.subj.3@:on0@U.subj.3@ #;
 
 LEXICON AorSerII
 +Aor:i Num;
-+Aor+3sg@U.subj.3@:a0@U.subj.3@ #;
-+Aor+3pl@U.subj.3@:nen0@U.subj.3@ #;
++Aor+3Sg@U.subj.3@:a0@U.subj.3@ #;
++Aor+3Pl@U.subj.3@:nen0@U.subj.3@ #;
 +Opt:e Num;
-+Opt+3sg@U.subj.3@:es0@U.subj.3@ #;
-+Opt+3pl@U.subj.3@:en0@U.subj.3@ #;
++Opt+3Sg@U.subj.3@:es0@U.subj.3@ #;
++Opt+3Pl@U.subj.3@:en0@U.subj.3@ #;
 
 LEXICON AorSerIII
 +Aor:e Num;
-+Aor+3sg@U.subj.3@:a0@U.subj.3@ #;
-+Aor+3pl@U.subj.3@:es0@U.subj.3@ #;
++Aor+3Sg@U.subj.3@:a0@U.subj.3@ #;
++Aor+3Pl@U.subj.3@:es0@U.subj.3@ #;
 +Opt:o Num;
-+Opt+3sg@U.subj.3@:os0@U.subj.3@ #;
-+Opt+3pl@U.subj.3@:on0@U.subj.3@ #;
++Opt+3Sg@U.subj.3@:os0@U.subj.3@ #;
++Opt+3Pl@U.subj.3@:on0@U.subj.3@ #;
 
 LEXICON PerfSerIandIII
 NONE #;
