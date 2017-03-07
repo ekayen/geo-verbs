@@ -25,14 +25,20 @@
 			for($i = 0; $i < sizeof($w); $i++){
 				echo $i.". ".$w[$i]."<br />";
 			}
+			
 */			
+		if($iv==""){
+			echo "Please enter a verb";
+		} else{		
+			$analyzed=0;
 			if($w[sizeof($w)-1]=="???"){
 				echo "No analysis found for ".$iv;
 			} else {
 				$analysis = $w[sizeof($w)-1];
 				echo "Analysis of ".$iv.": ".$analysis;
+				$analyzed=1;
 			}
-			
+		}
 		?>
 
 </strong>
@@ -95,7 +101,7 @@
 		if(preg_match('/\+Opt/', $analysis)){
 			$Opt=1;
 		}
-		
+	if($analyzed==1 && $iv!=""){
 		//Print out screeve info:
 		if($PFSFFut==1){
 			echo nl2br("Screeve: future indicative\n\r");
@@ -134,6 +140,7 @@
 		} else {
 			echo nl2br("Object: none marked\n");
 		}
+	}
 	?>
 </p>
 	<hr /> <!-- horizontal rule-->
