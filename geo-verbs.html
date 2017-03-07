@@ -1,7 +1,8 @@
 ﻿<!DOCTYPE html>
 <html>
 <head>
-<title>ქარტული ზმნების</title>
+<title>ქართული ზმნა</title>
+<link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
 <style>
 h1 {
     font-family: garamond;
@@ -17,59 +18,76 @@ h2 {
 p  {
     margin: 20px; 
     font-family: garamond;
-    border: 1px solid lightgray;
+    /*border: 1px solid lightgray;*/
     padding: 30px;
+	position: relative;
+	top: -50px;
 }
 #p01 {
     border: 5px solid gray;
     padding: 0px
+}
+.form{
+	width: 30%;
+	float: left;
 }
 
 </style>
 </head>
 <body>
 
-<h1>Georgian Verbs</h1>
+<h1>The Screevenator</h1>
 <h2>Analyze:</h2>
-<form action="/action_page.php"><p>
+<form action="http://localhost/analyze.php">
+<div class="exform">
 <strong>Verb form:</strong><br>
 <input type="text" name="inVerb"></input>
 <input type="submit" value="Submit">
-</p></form>
-<br><br><br>
-<p id="p01"></p>
-<br><br><br>
+</div>
+</form>
+
 
 <h2>Conjugate:</h2>
-<form action="/action_page.php"><p>
-<strong>Person</strong>:<br>
-<input type="radio" name="person" value=1sg>მე<br>
-<input type="radio" name="person" value=2sg>შენ<br>
-<input type="radio" name="person" value=3sg>ის/მის<br>
-<input type="radio" name="person" value=1pl>ჩვენ<br>
-<input type="radio" name="person" value=2pl>თქვენ<br>
-<input type="radio" name="person" value=3pl>ისინი/მათ<br>
-</p></form>
-<form action="/action_page.php"><p>
+<form action="http://localhost/conjugate.php">
+<div class="exform">
+<strong>Subject</strong>:<br>
+<input type="radio" name="subject" value="1sg">მე<br>
+<input type="radio" name="subject" value="2sg">შენ<br>
+<input type="radio" name="subject" value="3sg">ის/მის<br>
+<input type="radio" name="subject" value="1pl">ჩვენ<br>
+<input type="radio" name="subject" value="2pl">თქვენ<br>
+<input type="radio" name="subject" value="3pl">ისინი/მათ<br>
+</div> <br />
+<div class="exform">
+<strong>Object</strong>:<br>
+<input type="radio" name="object" value="1sg">მე<br>
+<input type="radio" name="object" value="2sg">შენ<br>
+<input type="radio" name="object" value="3sg">ის/მის<br>
+<input type="radio" name="object" value="1pl">ჩვენ<br>
+<input type="radio" name="object" value="2pl">თქვენ<br>
+<input type="radio" name="object" value="3pl">ისინი/მათ<br>
+</div> <br />
+<div class="exform">
 <strong>Screeve:</strong> <br>
+
 <input type="radio" name="screeve" value="present">Present<br>
 <input type="radio" name="screeve" value="imperfect">Imperfect<br>
 <input type="radio" name="screeve" value="presentSubjunctive">Present Subjunctive<br><br>
 <input type="radio" name="screeve" value="future">Future<br>
 <input type="radio" name="screeve" value="conditional">Conditional<br>
 <input type="radio" name="screeve" value="futureSubjunctive">Future Subjunctive<br><br>
-<input type="radio" name="screeve" value="perfect">Perfect<br>
-<input type="radio" name="screeve" value="pluperfect">Pluperfect<br>
-<input type="radio" name="screeve" value="perfectSubjunctive">Perfect Subjunctive<br><br>
+<input type="radio" name="screeve" value="perfect" disabled=disabled><font color="gray">Perfect</font><br>
+<input type="radio" name="screeve" value="pluperfect" disabled=disabled><font color="gray">Pluperfect</font><br>
+<input type="radio" name="screeve" value="perfectSubjunctive" disabled=disabled><font color="gray">Perfect Subjunctive</font><br><br>
 <input type="radio" name="screeve" value="aorist">Aorist<br>
 <input type="radio" name="screeve" value="optative">Optative<br><br>
-</p></form>
-<form action="/action_page.php"><p>
-<strong>Verb in citation form:</strong><br>
+</div>
+<div class="exform">
+<strong>Verb in citation form:</strong>
 <input type="text" name="inVerb"></input>
-<input type="submit" value="Submit"></input><br><br>
-
-</p></form>
+<input type="submit" value="Submit"></input>
+</div>
+</form>
 
 
 </body>
