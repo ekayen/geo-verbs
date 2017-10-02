@@ -7,26 +7,15 @@
  <?php 
 	$iv = htmlspecialchars($_GET["inVerb"]);
 	exec("C:\\Users\\ekaye\\Documents\\GitHub\\geo-verbs\\xfst -e \"read lexc < C:\\Users\\ekaye\\Documents\\GitHub\\geo-verbs\\geo-verbs-I.txt\" -e \"up $iv\" exit", $output, $rv);
-	
-/*
-	$x = var_dump($output);
-	$y = var_dump($rv);
-*/
 	$w = $output;
 
-	//echo $x." noah ".sizeof($output)." liz ".$rv." bucolic ".$y;
 ?> 
 
 <p>
 
 <strong>
 		<?php
-/*			
-			for($i = 0; $i < sizeof($w); $i++){
-				echo $i.". ".$w[$i]."<br />";
-			}
-			
-*/			
+		
 		if($iv==""){
 			echo "Please enter a verb";
 		} else{		
