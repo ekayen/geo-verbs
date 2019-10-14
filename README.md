@@ -20,4 +20,6 @@ twolc.exe
 xfst.exe
 ```
 
-The analyzer can then be used either via the xfst command-line tool or the html-based interface defined in `geo-verbs.html`.
+The analyzer can then be used either via the xfst command-line tool or the html-based interface defined in `geo-verbs.html`. 
+
+Given a conjugated Georgian verb, the analyzer outputs the morphological analysis in terms of Leipzig-style glosses. Given a root and a collection of features, the analyzer outputs the correct conjugation of the verb.
