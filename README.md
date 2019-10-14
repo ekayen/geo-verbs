@@ -12,10 +12,12 @@ Uses Xerox's xfst system.
 
 2. Download xfst from here: https://web.stanford.edu/~laurik/fsmbook/home.html
 3. Place the following binary files in the top level of this repository: 
-```lexc.exe
+```
+lexc.exe
 lookup.exe
 tokenize.exe
 twolc.exe
-xfst.exe```
+xfst.exe
+```
 
 The analyzer can then be used either via the xfst command-line tool or the html-based interface defined in `geo-verbs.html`.
